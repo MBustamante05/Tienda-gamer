@@ -13,6 +13,7 @@ Landing page para la **Tienda Gamer**, especializada en la venta de productos te
 
 - HTML5
 - CSS3
+- SASS
 - JavaScript
 
 ## Instalación
