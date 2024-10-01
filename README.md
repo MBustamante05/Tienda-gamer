@@ -1,6 +1,6 @@
-# Tienda Gamer
+# Arcadia Realm
 
-Landing page para la **Tienda Gamer**, especializada en la venta de productos tecnológicos relacionados con videojuegos.
+Landing page para la **Arcadia Realm**, especializada en la venta de productos tecnológicos relacionados con videojuegos.
 
 ## Secciones
 
