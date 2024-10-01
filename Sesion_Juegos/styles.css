@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
 body {
     background-color: #141227;
 }
@@ -11,7 +11,7 @@ body {
     color: darkgray  /* Cambia el color cuando pasas el mouse por encima */
   }
 
-  @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+  
 .nav-bar .logo {
   font-family: "Pixelify Sans", sans-serif;
   font-size: 1.7rem;
@@ -26,6 +26,7 @@ body {
   
   .nav-bar {
   background-color: rgba(4, 4, 28, 0.6392156863);
+  padding: 0 10px;
   }
   .nav-bar .logo {
   font-family: "Pixelify Sans", sans-serif;
@@ -117,6 +118,7 @@ body {
   margin: 60px;
   margin-bottom: 20px;
   text-align: center;
+  transition: all 0.3s; /*Agregarle suavidad*/
 }
 
 .bg-custom-footer {
@@ -182,14 +184,6 @@ h2 {
 
 .card:hover{
   transform: scale(1.1);
-  z-index: 1;
+  z-index: 1;
 }
 
-
-
-
-
-
-
-  
-  
