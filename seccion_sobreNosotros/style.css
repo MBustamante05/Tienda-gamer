@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+.nav-bar {
+  background-color: rgba(4, 4, 28, 0.6392156863);
+}
+.nav-bar .logo {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 1.7rem;
+}
+.nav-bar .sections {
+  gap: 15px;
+}
+.nav-bar .collapse {
+  justify-content: center;
+}
+
+body {
+  padding-top: 20px;
+}
+body .gamepad, body .puzzle, body .dice, body .diamond, body .trophy, body .trophy2 {
+  position: absolute;
+  font-size: 2.8rem;
+  color: rgba(92, 152, 211, 0.3568627451);
+  z-index: -1;
+}
+body .gamepad {
+  top: 70%;
+  left: 10%;
+  transform: rotate(-45deg);
+}
+body .puzzle {
+  top: 80%;
+  right: 10%;
+  transform: rotate(15deg);
+}
+body .dice {
+  top: 30%;
+  left: 3%;
+  transform: rotate(-105deg);
+}
+body .diamond {
+  top: 5%;
+  right: 10%;
+  transform: rotate(-95deg);
+  z-index: -1;
+}
+body .trophy {
+  top: 40%;
+  right: 2%;
+  transform: rotate(-15deg);
+}
+body .trophy2 {
+  top: 5%;
+  left: 10%;
+  transform: rotate(15deg);
+}
+
+.container {
+  color: #fff;
+}
+.container h1 {
+  color: #3392F0;
+  border-bottom: 1px solid #3392F0;
+}
+.container .cards {
+  margin: 10px 0;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container .card {
+  color: #fff;
+}
+.container .card1 {
+  background-color: #3392F0;
+  color: #fff;
+  box-shadow: 5px 5px 1px #1b538c;
+}
+.container .card2 {
+  align-self: flex-end;
+  background-color: #839fed;
+  box-shadow: 5px 5px 1px #4c5e90;
+}
+.container .card3 {
+  align-self: center;
+  background-color: #584af0;
+  box-shadow: 5px 5px 1px #182b89;
+}
+@keyframes sinSombra {
+  from {
+    transform: translateX(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+.container .card1:hover, .container .card2:hover, .container .card3:hover {
+  animation: sinSombra 0.5s;
+  box-shadow: none;
+}
+
+footer {
+  background-color: rgba(4, 4, 28, 0.7137254902);
+  width: 100%;
+  color: #b6b5b5;
+}
+footer i {
+  cursor: pointer;
+}
+footer .contact, footer .socials {
+  color: #3392F0;
+}
+
+/*# sourceMappingURL=style.css.map */

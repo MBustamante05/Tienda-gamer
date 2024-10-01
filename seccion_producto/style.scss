@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+// Variables
+$dark-purple: #141227;
+$dark-blue: #083576;
+$light-blue: #3392F0;
+$light-pink:#CA397C;
+$dark-pink: #DC096A;
+$iconos: #3392F0;
+$nav:#04041ca3;
+$footer:#04041cb6;
+// body{
+//   background: $dark-blue; //revisar
+// }
+body{
+  padding-top: 20px; 
+  .gamepad,.puzzle,.dice,.diamond,.trophy,.trophy2{
+    position: absolute;
+    font-size: 2.8rem;
+    color: #5c98d35b;
+    z-index: -1;
+  }
+  .gamepad{
+    top: 70%;
+    left: 10%;
+    transform: rotate(-45deg);
+  }
+  .puzzle{
+    top: 80%;
+    right: 10%;
+    transform: rotate(15deg);
+  }
+  .dice{
+    top: 30%;
+    left: 3%;
+    transform: rotate(-105deg);
+  }
+  .diamond{
+    top: 5%;
+    right: 10%;
+    transform: rotate(-95deg);
+    z-index: -1;
+  }
+  .trophy{
+    top: 40%;
+    right: 2%;
+    transform: rotate(-15deg);
+  }
+  .trophy2{
+    top: 5%;
+    left: 10%;
+    transform: rotate(15deg);
+  }
+}
+.nav-bar{
+  background-color: $nav;
+  .logo{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1.7rem;
+  }
+  .sections{
+    gap: 15px;
+  }
+  .collapse{
+   justify-content: center;
+  }
+}
+.container{
+  
+  h1{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .juegos{
+    display: flex;
+    gap: 20px;
+    .card{
+      // background: $light-pink;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ;
+      background-color: #111;
+      img{
+        width: 100%;
+        height: 100%;
+
+      }
+      
+      // Colocar las imágenes del mismo tamaño
+      .card-img-top {
+        width: 100%;
+        height: 25vw;
+        object-fit: cover;
+      }
+    }
+    
+    .card:hover{
+      transform: scale(1.1);
+      z-index: 1;
+    }
+  }
+  
+
+}
+
+// FOOTER
+footer{
+  background-color: $footer;
+  width: 100%;
+  color: #b6b5b5;
+  i{
+    cursor: pointer;
+  }
+  .contact, .socials{
+    color: $iconos;
+  }
+}
+//Responsive
+@media screen and (min-width: 400px){
+  .card{
+    margin: 1rem 0;
+  }
+}
+@media screen and (max-width:860px) {
+  body{
+    overflow-x: hidden;
+  }
+  .container{
+    padding: 0 50px;
+    .card{
+      margin: 1rem ;
+    }
+  }
+  .card-img-top {
+    width: 100%;
+    height: 100vw !important;
+    object-fit: cover;
+  }
+}

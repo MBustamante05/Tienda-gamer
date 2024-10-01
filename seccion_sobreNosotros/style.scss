@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+// Variables
+$dark-purple: #141227;
+$dark-blue: #083576;
+$light-blue: #3392F0;
+$light-pink:#CA397C;
+$dark-pink: #DC096A;
+$iconos: #3392F0;
+$nav:#04041ca3;
+$footer:#04041cb6;
+
+// body{
+//   background-color: $light-blue; Revisar
+// }
+.nav-bar{
+  background-color: $nav;
+  .logo{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1.7rem;
+  }
+  .sections{
+    gap: 15px;
+  }
+  .collapse{
+    justify-content: center;
+   }
+}
+body{
+  padding-top: 20px;
+  .gamepad,.puzzle,.dice,.diamond,.trophy,.trophy2{
+    position: absolute;
+    font-size: 2.8rem;
+    color: #5c98d35b;
+    z-index: -1;
+  }
+  .gamepad{
+    top: 70%;
+    left: 10%;
+    transform: rotate(-45deg);
+  }
+  .puzzle{
+    top: 80%;
+    right: 10%;
+    transform: rotate(15deg);
+  }
+  .dice{
+    top: 30%;
+    left: 3%;
+    transform: rotate(-105deg);
+  }
+  .diamond{
+    top: 5%;
+    right: 10%;
+    transform: rotate(-95deg);
+    z-index: -1;
+  }
+  .trophy{
+    top: 40%;
+    right: 2%;
+    transform: rotate(-15deg);
+  }
+  .trophy2{
+    top: 5%;
+    left: 10%;
+    transform: rotate(15deg);
+  }
+}
+// MAIN CONTENT
+.container{
+  color: #fff;
+  h1{
+    color: $light-blue;
+    border-bottom: 1px solid $light-blue;
+  }
+  .cards{
+    margin: 10px 0; 
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column; //Alineación vertical
+    align-items: flex-start;
+  }
+  .card{
+    color: #fff;
+  }
+  .card1{
+    background-color: $iconos;
+    color: #fff;
+    box-shadow: 5px 5px 1px #1b538c;
+  }
+  .card2{
+    align-self: flex-end;
+    background-color: #839fed;
+    box-shadow: 5px 5px 1px #4c5e90;
+
+  }
+  .card3{
+    align-self: center;
+    background-color: #584af0;
+    box-shadow: 5px 5px 1px #182b89;
+  }
+  //Animación
+  @keyframes sinSombra{
+    from{transform: translateX(-5px);}
+    to{transform: translateY(5px);}
+  }
+  .card1:hover,.card2:hover,.card3:hover{
+    animation: sinSombra 0.5s;
+    box-shadow: none;
+  }
+}
+// FOOTER
+footer{
+  background-color: $footer;
+  width: 100%;
+  color: #b6b5b5;
+  i{
+    cursor: pointer;
+  }
+  .contact, .socials{
+    color: $iconos;
+  }
+}
