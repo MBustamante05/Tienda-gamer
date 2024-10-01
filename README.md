@@ -1,6 +1,6 @@
 # Arcadia Realm
 
-Landing page para la **Arcadia Realm**, especializada en la venta de productos tecnológicos relacionados con videojuegos.
+Landing page para **Arcadia Realm**, especializada en la venta de productos tecnológicos relacionados con videojuegos.
 
 ## Secciones
 
@@ -20,4 +20,4 @@ Landing page para la **Arcadia Realm**, especializada en la venta de productos t
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/tienda-gamer.git
+   git clone https://github.com/MBustamante05/Tienda-gamer
