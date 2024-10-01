@@ -10,6 +10,18 @@ body {
   .nav-link:hover {
     color: darkgray  /* Cambia el color cuando pasas el mouse por encima */
   }
+
+  @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+.nav-bar .logo {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 1.7rem;
+}
+.nav-bar .sections {
+  gap: 15px;
+}
+.nav-bar .collapse {
+  justify-content:center;
+}
   
   
   .nav-bar {
